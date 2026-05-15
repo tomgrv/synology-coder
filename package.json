@@ -1,0 +1,16 @@
+{
+    "name": "synology-coder",
+    "version": "0.1.0+2.32.2",
+    "description": "Run Coder on your Synology NAS using the official coder/coder container image.",
+    "license": "MIT",
+    "synology": {
+        "displayname": "Coder",
+        "distributor": "github.com/tomgrv",
+        "distributor_url": "https://github.com/tomgrv/synology-coder",
+        "maintainer": "github.com/coder",
+        "maintainer_url": "https://github.com/coder/coder",
+        "os_min_ver": "7.0-40337",
+        "support_url": "https://github.com/tomgrv/synology-coder/issues"
+    },
+    "target": "./src"
+}
