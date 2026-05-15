@@ -1,0 +1,25 @@
+## Modules
+/node_modules
+**/node_modules
+
+## DotEnv
+.env*
+!.env.project
+!.env.vault
+
+## Logs
+*.log
+*.cache
+
+## Build output
+/dist
+
+## Misc
+.history
+.version.json
+.mono
+.toolkit
+bin
+obj
+./.gitattributes
+.github/workflows/.secrets

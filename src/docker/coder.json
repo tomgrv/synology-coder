@@ -1,0 +1,34 @@
+{
+    "name": "coder",
+    "cmd": "",
+    "cpu_priority": "90",
+    "enable_publish_all_ports": false,
+    "enable_restart_policy": true,
+    "env_variables": [
+        {
+            "key": "CODER_ACCESS_URL",
+            "value": "{{wizard.access_url}}"
+        }
+    ],
+    "image": "codercom/coder:2.32.2",
+    "is_package": true,
+    "memory_limit": 0,
+    "port_bindings": [
+        {
+            "container_port": 7080,
+            "host_port": 7080,
+            "type": "tcp"
+        }
+    ],
+    "privileged": true,
+    "shortcut": {
+        "enable_shortcut": false
+    },
+    "volume_bindings": [
+        {
+            "host_absolute_path": "/volume1/docker/coder",
+            "mount_point": "/home/coder/.local/share/coder",
+            "type": "rw"
+        }
+    ]
+}

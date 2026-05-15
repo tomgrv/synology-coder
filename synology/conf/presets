@@ -1,0 +1,8 @@
+{
+    "docker": [
+        {
+            "profile": "./docker/coder.json",
+            "preload": false
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+[
+    {
+        "step_title": "Coder Configuration",
+        "items": [
+            {
+                "type": "textfield",
+                "desc": "Coder Access URL",
+                "subitems": [
+                    {
+                        "key": "access_url",
+                        "desc": "Public Coder URL",
+                        "defaultValue": "http://localhost:7080",
+                        "validator": {
+                            "regex": {
+                                "allowBlank": false,
+                                "expr": "/^https?:\\/\\/[^\\s]+$/",
+                                "errorText": "Access URL must start with http:// or https://"
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]
